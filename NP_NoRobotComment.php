@@ -167,7 +167,7 @@ class NP_NoRobotComment extends NucleusPlugin {
             return FALSE;
         }
         
-        if (preg_match('[^0-9]', $posttime)) {
+        if (preg_match('/[^0-9]/', $posttime)) {
             $this->error = _NOROBOTCOMMENT_NotValid;
         } else if ($this->getOption('mintimer') != 0 && time() - $posttime < $this->getOption('mintimer')) {
             $this->error = _NOROBOTCOMMENT_TooFast;
