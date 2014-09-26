@@ -35,7 +35,7 @@ class NP_NoRobotComment extends NucleusPlugin {
     
     public function install() {
         $this->createOption('mode', _NOROBOTCOMMENT_Mode, 'select', '0', $typeExtras = _NOROBOTCOMMENT_Mode0 . "|0|" . _NOROBOTCOMMENT_Mode1 . "|1|" . _NOROBOTCOMMENT_Mode2 . "|2");
-        $this->createOption('tag', _NOROBOTCOMMENT_Label, 'textarea', "<input type=\"checkbox\" name=\"ticket\" value=\"<%ticket%>\" id=\"norobot\" />\n<label for=\"norobot\"><%label%></label>\n<input type=\"hidden\" name=\"timer\" value=\"<%timer%>\" />");
+        $this->createOption('tag', _NOROBOTCOMMENT_Label, 'textarea', '<input type="checkbox" name="ticket" value="<%ticket%>" id="norobot" /><label for="norobot"><%label%></label><input type="hidden" name="timer" value="<%timer%>" />');
         $this->createOption('label0', _NOROBOTCOMMENT_Error0, 'text', _NOROBOTCOMMENT_Unchecked);
         $this->createOption('label1', _NOROBOTCOMMENT_Error1, 'text', _NOROBOTCOMMENT_Checked);
         $this->createOption('checkmessage', _NOROBOTCOMMENT_Message, 'text', _NOROBOTCOMMENT_CheckMessage);
