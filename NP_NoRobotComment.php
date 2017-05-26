@@ -6,7 +6,7 @@ class NP_NoRobotComment extends NucleusPlugin {
     public function getName()        { return 'NoRobotComment'; }
     public function getAuthor()      { return 'pushman, Mocchi'; }
     public function getURL()         { return 'http://blog.heartfield-web.com/download/NP_NoRobotComment.html'; }
-    public function getVersion()     { return '0.95 alpha'; }
+    public function getVersion()     { return '0.95'; }
     public function getDescription() { return _NOROBOTCOMMENT_Description; }
     
     public function getMinNucleusVersion()    { return 320; }
